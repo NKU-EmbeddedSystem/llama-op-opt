@@ -1,6 +1,7 @@
 #include <arm_sve.h>
-#include <common.h>
 #include <time.h>
+
+#include "common.h"
 
 // test matrix
 #define M 4096
@@ -15,15 +16,15 @@ void matrix_mul_mat(float* matrix_a, float* matrix_b, float* matrix_c,int m, int
     for(int j=0;j<n;j++){
         for(int i=0;i<m;i++){
             for(int q=0;q<k;q++){
-                matrix_c[i*m+j] += matrix_a[i*m+q] * matrix_b[q*k+j];
+                matrix_c[i*n+j] += matrix_a[i*k+q] * matrix_b[q*n+j];
             }
         }
     }
 }
 
 int main(){
-    std::vector<int> index_A;
-    matrix_init_sparse(A,M,K,666,80,index_A);
+    std::map<int,std::vector<int>> index_row,index_col;
+    matrix_init_sparse(A,M,K,666,80,index_row,index_col);
     matrix_init(A,M,K,666);
     matrix_init(B,K,N,666);
     matrix_init_zero(C,M,N);
@@ -40,5 +41,6 @@ int main(){
 
     total_time = end_time - start_time;
     std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/10000 << "seconds to execute."<<std::endl;
+    
     return 0;
 }
