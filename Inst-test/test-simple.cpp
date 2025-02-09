@@ -3,10 +3,16 @@
 
 #include "common.h"
 
-// test matrix
-#define M 4096
-#define K 512
-#define N 4096
+// // test matrix LARGE
+// #define M 4096
+// #define K 512
+// #define N 4096
+
+// test matrix TEST
+#define M 4
+#define K 4
+#define N 4
+
 float A[M*K];
 float B[K*N];
 float C[M*N];
@@ -24,8 +30,7 @@ void matrix_mul_mat(float* matrix_a, float* matrix_b, float* matrix_c,int m, int
 
 int main(){
     std::map<int,std::vector<int>> index_row,index_col;
-    matrix_init_sparse(A,M,K,666,80,index_row,index_col);
-    matrix_init(A,M,K,666);
+    matrix_init_sparse(A,M,K,666,20,index_row,index_col);
     matrix_init(B,K,N,666);
     matrix_init_zero(C,M,N);
 
@@ -33,14 +38,16 @@ int main(){
 
     start_time = clock();
     
-    for(int i = 0;i<100;i++) {
+    // for(int i = 0;i<100;i++) {
         matrix_mul_mat(A, B, C, M, K, N);
-    } 
+    // } 
 
     end_time = clock();
 
     total_time = end_time - start_time;
     std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/10000 << "seconds to execute."<<std::endl;
-    
+    print_matrix(A, M, K);
+    print_matrix(B, K, N);
+    print_matrix(C, M, N);
     return 0;
 }
