@@ -1,0 +1,19 @@
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.077e-05 seconds to execute. Sparsity: 0
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.211e-05 seconds to execute. Sparsity: 10
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.767e-05 seconds to execute. Sparsity: 20
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.277e-05 seconds to execute. Sparsity: 30
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 4.439e-05 seconds to execute. Sparsity: 40
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.324e-05 seconds to execute. Sparsity: 50
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.502e-05 seconds to execute. Sparsity: 60
+vector register length: 16 (x 32) bits
+Sparse gather mul_mat took 3.278e-05 seconds to execute. Sparsity: 70
+vector register length: 16 (x 32) bits
+vector register length: 16 (x 32) bits
+vector register length: 16 (x 32) bits

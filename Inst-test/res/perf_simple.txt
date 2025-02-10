@@ -1,0 +1,1 @@
+Simple mul_mat took 6.798e-05 seconds to execute.  Sparsity: 0

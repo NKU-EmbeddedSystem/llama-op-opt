@@ -1,4 +1,5 @@
 #include <arm_sve.h>
+#include <unistd.h>
 #include <time.h>
 
 #include "common.h"
@@ -8,10 +9,15 @@
 // #define K 512
 // #define N 4096
 
+// // test matrix MEDIUM
+// #define M 512
+// #define K 512
+// #define N 512
+
 // test matrix TEST
-#define M 4
-#define K 4
-#define N 4
+#define M 16
+#define K 16
+#define N 16
 
 float A[M*K];
 float B[K*N];
@@ -28,26 +34,42 @@ void matrix_mul_mat(float* matrix_a, float* matrix_b, float* matrix_c,int m, int
     }
 }
 
-int main(){
+int main(int argc, char* argv[]){
+    int sp = -1;
+
+    int opt;
+    while ((opt = getopt(argc, argv, "s:")) != -1) {
+        switch (opt) {
+            case 's':
+                sp = std::stoi(optarg); 
+                break;
+            default:
+                std::cerr << "usage:  -s <sparsity>" << std::endl;
+                return 1;
+        }
+    }
+    if(sp == -1){
+        std::cerr << "usage:  -s <sparsity>" << std::endl;
+        return 1;
+    }
+
     std::map<int,std::vector<int>> index_row,index_col;
-    matrix_init_sparse(A,M,K,666,20,index_row,index_col);
-    matrix_init(B,K,N,666);
+    matrix_init_sparse(A,M,K,666,sp,index_row,index_col);
+    matrix_init(B,K,N,888);
     matrix_init_zero(C,M,N);
 
     clock_t start_time, end_time, total_time;
 
     start_time = clock();
-    
-    // for(int i = 0;i<100;i++) {
+    for(int i = 0;i<100;i++) {
         matrix_mul_mat(A, B, C, M, K, N);
-    // } 
-
+    } 
     end_time = clock();
 
     total_time = end_time - start_time;
-    std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/10000 << "seconds to execute."<<std::endl;
-    print_matrix(A, M, K);
-    print_matrix(B, K, N);
-    print_matrix(C, M, N);
+    // print_matrix(A, M, K);
+    // print_matrix(B, K, N);
+    // print_matrix(C, M, N);
+    std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC / 100 << " seconds to execute.  Sparsity: "<< sp <<std::endl;
     return 0;
 }

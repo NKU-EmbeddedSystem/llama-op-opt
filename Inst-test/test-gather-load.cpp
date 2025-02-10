@@ -1,6 +1,7 @@
 #include <arm_sve.h>
 #include <time.h>
 #include <assert.h>
+#include <unistd.h>
 #include "common.h"
 
 // // test matrix LARGE
@@ -8,10 +9,15 @@
 // #define K 512
 // #define N 4096
 
+// // test matrix MEDIUM
+// #define M 512
+// #define K 512
+// #define N 512
+
 // test matrix TEST
-#define M 4
-#define K 4
-#define N 4
+#define M 16
+#define K 16
+#define N 16
 
 float A[M*K];
 float B[K*N];
@@ -24,7 +30,7 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
     assert(index_row.size()==index_col.size());
     
     int vl = svcntw();
-    
+    // std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
     for(int j=0;j<n;j++){
         for(int i=0;i<m;i++){            
             // mod : part that is not enough for vl
@@ -39,10 +45,13 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
                 // load vector_a from matrix_a
                 svint32_t indices_a = svld1_s32(pg_full,index_row[i].data() + vec_i*vl);
                 svfloat32_t va = svld1_gather_s32index_f32(pg_full, matrix_a, indices_a);
+                // print_vector(va);
+                
                 // load vector_b from matrix_b
                 svint32_t indices_b_base = svld1_s32(pg_full, index_col[i].data() + vec_i*vl);
                 svint32_t indices_b = svadd_n_s32_z(pg_full, indices_b_base ,(int32_t)j);
                 svfloat32_t vb = svld1_gather_s32index_f32(pg_full, matrix_b, indices_b);
+                // print_vector(vb);
 
                 svfloat32_t vprod = svmul_f32_z(pg_full,va,vb);
                 res += svaddv_f32(pg_full,vprod);
@@ -52,13 +61,17 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
             if(mod){
                 // set first mod elements to True
                 const svbool_t pg = svwhilelt_b32(0,mod);
+                
                 // load vector_a from matrix_a
                 svint32_t indices_a = svld1_s32(pg, index_row[i].data());
                 svfloat32_t va = svld1_gather_s32index_f32(pg, matrix_a, indices_a);
+                // print_vector(va);
+
                 // load vector_b from matrix_b
                 svint32_t indices_b_base = svld1_s32(pg, index_col[i].data());
                 svint32_t indices_b = svadd_n_s32_z(pg, indices_b_base ,(int32_t)j);
                 svfloat32_t vb = svld1_gather_s32index_f32(pg, matrix_b, indices_b);
+                // print_vector(vb);
 
                 svfloat32_t vprod = svmul_f32_z(pg,va,vb);
                 res += svaddv_f32(pg,vprod);
@@ -68,26 +81,46 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
     }
 }
 
-int main(){
+int main(int argc, char* argv[]){
+    int sp = -1;
+
+    int opt;
+    while ((opt = getopt(argc, argv, "s:")) != -1) {
+        switch (opt) { 
+            case 's':
+                sp = std::stoi(optarg); 
+                break;
+            default:
+                std::cerr << "usage:  -s <sparsity>" << std::endl;
+                return 1;
+        }
+    }
+
+    if(sp == -1){
+        std::cerr << "usage:  -s <sparsity>" << std::endl;
+        return 1;
+    }
+
+    int vl = svcntw();
+    std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
+
     std::map<int,std::vector<int>> index_row,index_col;
-    matrix_init_sparse(A,M,K,666,20,index_row,index_col);
-    matrix_init(B,K,N,666);
+    matrix_init_sparse(A,M,K,666,sp,index_row,index_col);
+    matrix_init(B,K,N,888);
     matrix_init_zero(C,M,N);
 
     clock_t start_time, end_time, total_time;
 
     start_time = clock();
-    
     for(int i = 0;i<100;i++) {
         matrix_mul_mat_SVE(A, B, C, M, K, N,index_row,index_col);
     } 
-
     end_time = clock();
 
     total_time = end_time - start_time;
-    std::cout<<"Sparse gather mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/10000 << "seconds to execute."<<std::endl;
-    print_matrix(A, M, K);
-    print_matrix(B, K, N);
-    print_matrix(C, M, N);
+    // print_matrix(A, M, K);
+    // print_matrix(B, K, N);
+    // print_matrix(C, M, N);
+    std::cout<<"Sparse gather mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/100 << " seconds to execute. Sparsity: "<< sp <<std::endl;
     return 0;
 }

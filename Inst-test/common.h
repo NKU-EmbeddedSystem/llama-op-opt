@@ -1,4 +1,5 @@
 #include <chrono>
+#include <arm_sve.h>
 #include <cstring>
 #include <iostream>
 #include <vector>
@@ -41,6 +42,25 @@ void matrix_init_sparse(float* mat, int64_t m, int64_t n, unsigned int seed, int
             index_col[i].push_back(j*n);
         }
     } 
+}
+
+void  print_vector(svfloat32_t vec){
+    int vl = svcntw();
+    const svbool_t pg_full = svptrue_b32();
+    float* output = new float[vl];
+    
+    for(int i=0;i<vl;i++){
+        output[i]=0;
+    }
+    svst1(pg_full, output, vec);
+    std::cout<<"length:"<<vl<<" [";
+    for(int i=0;i<vl;i++){
+        std::cout<<output[i]<<",";
+    }
+    std::cout<<"]\n";
+
+    delete []output;
+
 }
 
 void print_matrix(float* mat, int64_t m, int64_t n){
