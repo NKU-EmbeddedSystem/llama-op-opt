@@ -4,20 +4,37 @@
 #include <unistd.h>
 #include "common.h"
 
-// // test matrix LARGE
-// #define M 4096
-// #define K 512
-// #define N 4096
+#if defined(SUPER_LARGE)
+// test matrix SUPER_LARGE
+#define M 4096
+#define K 4096
+#define N 4096
 
-// // test matrix MEDIUM
-// #define M 512
-// #define K 512
-// #define N 512
+#elif defined(LARGE)
+// test matrix LARGE
+#define M 1024
+#define K 1024
+#define N 1024
 
+#elif defined(MEDIUM)
+// test matrix MEDIUM
+#define M 512
+#define K 512
+#define N 512
+
+#elif defined(SMALL)
+// test matrix SMALL
+#define M 256
+#define K 256
+#define N 256
+
+#else
 // test matrix TEST
 #define M 16
 #define K 16
 #define N 16
+
+#endif
 
 float A[M*K];
 float B[K*N];
@@ -25,14 +42,15 @@ float C[M*N];
 
 // Simply mul mat two matrix
 void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m, int k, int n,
-    std::map<int,std::vector<int>>& index_row,std::map<int,std::vector<int>>& index_col){
-        
+    std::map<int,std::vector<int>> index_row,std::map<int,std::vector<int>> index_col){
+
     assert(index_row.size()==index_col.size());
     
     int vl = svcntw();
     // std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
     for(int j=0;j<n;j++){
-        for(int i=0;i<m;i++){            
+        for(int i=0;i<m;i++){
+            assert(index_row[i].size()==index_col[i].size());            
             // mod : part that is not enough for vl
             int index_num = index_row[i].size();
             int vec_num = index_num/vl;
@@ -59,6 +77,7 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
 
             // final part
             if(mod){
+                assert(index_row[i].size()==index_col[i].size());            
                 // set first mod elements to True
                 const svbool_t pg = svwhilelt_b32(0,mod);
                 
@@ -101,8 +120,8 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    int vl = svcntw();
-    std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
+    // int vl = svcntw();
+    // std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
 
     std::map<int,std::vector<int>> index_row,index_col;
     matrix_init_sparse(A,M,K,666,sp,index_row,index_col);

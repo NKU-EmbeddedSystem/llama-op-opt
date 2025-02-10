@@ -41,7 +41,26 @@ void matrix_init_sparse(float* mat, int64_t m, int64_t n, unsigned int seed, int
             index_row[i].push_back(i*n+j);
             index_col[i].push_back(j*n);
         }
-    } 
+    }
+    // // Print test
+    // std::cout<<"index_row length:"<<index_row.size();
+    // for(auto i : index_row){
+    //     std::cout<<"row "<< i.first <<":[";
+    //     for (int j = 0; j < i.second.size(); j ++) {
+    //     std::cout<< i.second[j] <<" ";
+    //     }
+    //     std::cout<<"]"<<std::endl;
+    // }
+    // std::cout<<std::endl;
+    // std::cout<<"index_col length:"<<index_col.size();
+    // for(auto i : index_col){
+    //     std::cout<<"row "<< i.first <<":[";
+    //     for (int j = 0; j < i.second.size(); j ++) {
+    //     std::cout<< i.second[j] <<" ";
+    //     }
+    //     std::cout<<"]"<<std::endl;
+    // }
+    // std::cout<<std::endl;
 }
 
 void  print_vector(svfloat32_t vec){

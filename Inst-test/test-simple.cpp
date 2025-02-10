@@ -4,20 +4,37 @@
 
 #include "common.h"
 
-// // test matrix LARGE
-// #define M 4096
-// #define K 512
-// #define N 4096
+#if defined(SUPER_LARGE)
+// test matrix SUPER_LARGE
+#define M 4096
+#define K 4096
+#define N 4096
 
-// // test matrix MEDIUM
-// #define M 512
-// #define K 512
-// #define N 512
+#elif defined(LARGE)
+// test matrix LARGE
+#define M 1024
+#define K 1024
+#define N 1024
 
+#elif defined(MEDIUM)
+// test matrix MEDIUM
+#define M 512
+#define K 512
+#define N 512
+
+#elif defined(SMALL)
+// test matrix SMALL
+#define M 256
+#define K 256
+#define N 256
+
+#else
 // test matrix TEST
 #define M 16
 #define K 16
 #define N 16
+
+#endif
 
 float A[M*K];
 float B[K*N];

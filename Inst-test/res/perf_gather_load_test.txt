@@ -1,0 +1,11 @@
+Sparse gather mul_mat took 5.1e-05 seconds to execute. Sparsity: 0
+Sparse gather mul_mat took 5.669e-05 seconds to execute. Sparsity: 10
+Sparse gather mul_mat took 6.051e-05 seconds to execute. Sparsity: 20
+Sparse gather mul_mat took 6.094e-05 seconds to execute. Sparsity: 30
+Sparse gather mul_mat took 6.235e-05 seconds to execute. Sparsity: 40
+Sparse gather mul_mat took 6.732e-05 seconds to execute. Sparsity: 50
+Sparse gather mul_mat took 5.966e-05 seconds to execute. Sparsity: 60
+Sparse gather mul_mat took 6.014e-05 seconds to execute. Sparsity: 70
+Sparse gather mul_mat took 5.838e-05 seconds to execute. Sparsity: 80
+Sparse gather mul_mat took 4.821e-05 seconds to execute. Sparsity: 90
+Sparse gather mul_mat took 2.642e-05 seconds to execute. Sparsity: 100
