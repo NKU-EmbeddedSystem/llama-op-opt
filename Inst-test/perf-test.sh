@@ -9,70 +9,70 @@ fi
 
 sparsity=(0 10 20 30 40 50 60 70 80 90 100)
 
-if [ ! -d "./res/perf_gather_load_test.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-gather-load-TEST -s $sp >> ./res/perf_gather_load_test.txt
-    done
-fi
+# if [ ! -d "./res/perf_gather_load_test.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-gather-load-TEST -s $sp >> ./res/perf_gather_load_test.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_test.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-TEST -s $sp >> ./res/perf_simple_test.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_test.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-TEST -s $sp >> ./res/perf_simple_test.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_sve_test.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-sve-TEST -s $sp >> ./res/perf_simple_sve_test.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_sve_test.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-sve-TEST -s $sp >> ./res/perf_simple_sve_test.txt
+#     done
+# fi
 
-#=====================================================================================
-if [ ! -d "./res/perf_gather_load_small.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-gather-load-SMALL -s $sp >> ./res/perf_gather_load_small.txt
-    done
-fi
+# #=====================================================================================
+# if [ ! -d "./res/perf_gather_load_small.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-gather-load-SMALL -s $sp >> ./res/perf_gather_load_small.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_small.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-SMALL -s $sp >> ./res/perf_simple_small.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_small.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-SMALL -s $sp >> ./res/perf_simple_small.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_sve_small.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-sve-SMALL -s $sp >> ./res/perf_simple_sve_small.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_sve_small.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-sve-SMALL -s $sp >> ./res/perf_simple_sve_small.txt
+#     done
+# fi
 
-#=====================================================================================
-if [ ! -d "./res/perf_gather_load_medium.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-gather-load-MEDIUM -s $sp >> ./res/perf_gather_load_medium.txt
-    done
-fi
+# #=====================================================================================
+# if [ ! -d "./res/perf_gather_load_medium.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-gather-load-MEDIUM -s $sp >> ./res/perf_gather_load_medium.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_medium.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-MEDIUM -s $sp >> ./res/perf_simple_medium.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_medium.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-MEDIUM -s $sp >> ./res/perf_simple_medium.txt
+#     done
+# fi
 
-if [ ! -d "./res/perf_simple_sve_medium.txt" ];then
-for sp in "${sparsity[@]}"
-    do
-    ./build/test-simple-sve-MEDIUM -s $sp >> ./res/perf_simple_sve_medium.txt
-    done
-fi
+# if [ ! -d "./res/perf_simple_sve_medium.txt" ];then
+# for sp in "${sparsity[@]}"
+#     do
+#     ./build/test-simple-sve-MEDIUM -s $sp >> ./res/perf_simple_sve_medium.txt
+#     done
+# fi
 
 #=====================================================================================
 if [ ! -d "./res/perf_gather_load_large.txt" ];then

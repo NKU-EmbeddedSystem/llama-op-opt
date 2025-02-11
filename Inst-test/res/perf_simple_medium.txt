@@ -3,3 +3,9 @@ Simple mul_mat took 5.20254 seconds to execute.  Sparsity: 10
 Simple mul_mat took 5.21814 seconds to execute.  Sparsity: 20
 Simple mul_mat took 5.17068 seconds to execute.  Sparsity: 30
 Simple mul_mat took 5.17739 seconds to execute.  Sparsity: 40
+Simple mul_mat took 5.24926 seconds to execute.  Sparsity: 50
+Simple mul_mat took 5.20021 seconds to execute.  Sparsity: 60
+Simple mul_mat took 5.21546 seconds to execute.  Sparsity: 70
+Simple mul_mat took 5.18055 seconds to execute.  Sparsity: 80
+Simple mul_mat took 5.18863 seconds to execute.  Sparsity: 90
+Simple mul_mat took 5.22132 seconds to execute.  Sparsity: 100

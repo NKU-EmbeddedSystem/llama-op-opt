@@ -7,7 +7,7 @@
 #if defined(SUPER_LARGE)
 // test matrix SUPER_LARGE
 #define M 4096
-#define K 4096
+#define K 512
 #define N 4096
 
 #elif defined(LARGE)
@@ -131,7 +131,7 @@ int main(int argc, char* argv[]){
     clock_t start_time, end_time, total_time;
 
     start_time = clock();
-    for(int i = 0;i<100;i++) {
+    for(int i = 0;i<5;i++) {
         matrix_mul_mat_SVE(A, B, C, M, K, N,index_row,index_col);
     } 
     end_time = clock();
@@ -140,6 +140,6 @@ int main(int argc, char* argv[]){
     // print_matrix(A, M, K);
     // print_matrix(B, K, N);
     // print_matrix(C, M, N);
-    std::cout<<"Sparse gather mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/100 << " seconds to execute. Sparsity: "<< sp <<std::endl;
+    std::cout<<"Sparse gather mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/5 << " seconds to execute. Sparsity: "<< sp <<std::endl;
     return 0;
 }
