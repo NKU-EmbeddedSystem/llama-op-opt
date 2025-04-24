@@ -1,0 +1,381 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 264  of event 'cpu-clock'
+# Event count (approx.): 2666666640
+#
+# Children      Self       Samples  Command          Shared Object            Symbol                                    
+# ........  ........  ............  ...............  .......................  ..........................................
+#
+   100.00%     0.00%             0  test-gather-loa  test-gather-load-MEDIUM  [.] _start
+            |
+            ---_start
+               __libc_start_main_impl (inlined)
+               __libc_start_call_main
+               main
+               |          
+               |--89.02%--matrix_mul_mat_SVE
+               |          |          
+               |           --1.52%--el0_irq_naked
+               |                     gic_handle_irq
+               |                     __handle_domain_irq
+               |                     irq_exit
+               |                     __softirqentry_text_start
+               |                     run_timer_softirq
+               |                     expire_timers
+               |                     call_timer_fn
+               |                     vdec_timer_isr
+               |                     |          
+               |                      --1.14%--vdec_submit_job_to_vgs
+               |          
+               |--7.95%--matrix_init_sparse
+               |          |          
+               |           --4.92%--rand
+               |                     __random
+               |                     |          
+               |                     |--2.65%--__aarch64_cas4_acq
+               |                     |          
+               |                      --2.27%--__aarch64_swp4_rel
+               |          
+                --2.65%--rand
+                          __random
+                          |          
+                          |--1.52%--__aarch64_cas4_acq
+                          |          
+                           --1.14%--__aarch64_swp4_rel
+
+   100.00%     0.00%             0  test-gather-loa  libc.so.6                [.] __libc_start_main_impl (inlined)
+            |
+            ---__libc_start_main_impl (inlined)
+               __libc_start_call_main
+               main
+               |          
+               |--89.02%--matrix_mul_mat_SVE
+               |          |          
+               |           --1.52%--el0_irq_naked
+               |                     gic_handle_irq
+               |                     __handle_domain_irq
+               |                     irq_exit
+               |                     __softirqentry_text_start
+               |                     run_timer_softirq
+               |                     expire_timers
+               |                     call_timer_fn
+               |                     vdec_timer_isr
+               |                     |          
+               |                      --1.14%--vdec_submit_job_to_vgs
+               |          
+               |--7.95%--matrix_init_sparse
+               |          |          
+               |           --4.92%--rand
+               |                     __random
+               |                     |          
+               |                     |--2.65%--__aarch64_cas4_acq
+               |                     |          
+               |                      --2.27%--__aarch64_swp4_rel
+               |          
+                --2.65%--rand
+                          __random
+                          |          
+                          |--1.52%--__aarch64_cas4_acq
+                          |          
+                           --1.14%--__aarch64_swp4_rel
+
+   100.00%     0.00%             0  test-gather-loa  libc.so.6                [.] __libc_start_call_main
+            |
+            ---__libc_start_call_main
+               main
+               |          
+               |--89.02%--matrix_mul_mat_SVE
+               |          |          
+               |           --1.52%--el0_irq_naked
+               |                     gic_handle_irq
+               |                     __handle_domain_irq
+               |                     irq_exit
+               |                     __softirqentry_text_start
+               |                     run_timer_softirq
+               |                     expire_timers
+               |                     call_timer_fn
+               |                     vdec_timer_isr
+               |                     |          
+               |                      --1.14%--vdec_submit_job_to_vgs
+               |          
+               |--7.95%--matrix_init_sparse
+               |          |          
+               |           --4.92%--rand
+               |                     __random
+               |                     |          
+               |                     |--2.65%--__aarch64_cas4_acq
+               |                     |          
+               |                      --2.27%--__aarch64_swp4_rel
+               |          
+                --2.65%--rand
+                          __random
+                          |          
+                          |--1.52%--__aarch64_cas4_acq
+                          |          
+                           --1.14%--__aarch64_swp4_rel
+
+   100.00%     0.00%             0  test-gather-loa  test-gather-load-MEDIUM  [.] main
+            |
+            ---main
+               |          
+               |--89.02%--matrix_mul_mat_SVE
+               |          |          
+               |           --1.52%--el0_irq_naked
+               |                     gic_handle_irq
+               |                     __handle_domain_irq
+               |                     irq_exit
+               |                     __softirqentry_text_start
+               |                     run_timer_softirq
+               |                     expire_timers
+               |                     call_timer_fn
+               |                     vdec_timer_isr
+               |                     |          
+               |                      --1.14%--vdec_submit_job_to_vgs
+               |          
+               |--7.95%--matrix_init_sparse
+               |          |          
+               |           --4.92%--rand
+               |                     __random
+               |                     |          
+               |                     |--2.65%--__aarch64_cas4_acq
+               |                     |          
+               |                      --2.27%--__aarch64_swp4_rel
+               |          
+                --2.65%--rand
+                          __random
+                          |          
+                          |--1.52%--__aarch64_cas4_acq
+                          |          
+                           --1.14%--__aarch64_swp4_rel
+
+    89.02%    87.50%           231  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_mul_mat_SVE
+            |          
+            |--87.50%--_start
+            |          __libc_start_main_impl (inlined)
+            |          __libc_start_call_main
+            |          main
+            |          matrix_mul_mat_SVE
+            |          
+             --1.52%--matrix_mul_mat_SVE
+                       el0_irq_naked
+                       gic_handle_irq
+                       __handle_domain_irq
+                       irq_exit
+                       __softirqentry_text_start
+                       run_timer_softirq
+                       expire_timers
+                       call_timer_fn
+                       vdec_timer_isr
+                       |          
+                        --1.14%--vdec_submit_job_to_vgs
+
+     7.95%     3.03%             8  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_init_sparse
+            |          
+            |--4.92%--matrix_init_sparse
+            |          rand
+            |          __random
+            |          |          
+            |          |--2.65%--__aarch64_cas4_acq
+            |          |          
+            |           --2.27%--__aarch64_swp4_rel
+            |          
+             --3.03%--_start
+                       __libc_start_main_impl (inlined)
+                       __libc_start_call_main
+                       main
+                       matrix_init_sparse
+
+     7.58%     0.00%             0  test-gather-loa  libc.so.6                [.] rand
+            |
+            ---rand
+               __random
+               |          
+               |--4.17%--__aarch64_cas4_acq
+               |          
+                --3.41%--__aarch64_swp4_rel
+
+     7.58%     0.00%             0  test-gather-loa  libc.so.6                [.] __random
+            |
+            ---__random
+               |          
+               |--4.17%--__aarch64_cas4_acq
+               |          
+                --3.41%--__aarch64_swp4_rel
+
+     4.17%     4.17%            11  test-gather-loa  libc.so.6                [.] __aarch64_cas4_acq
+            |
+            ---_start
+               __libc_start_main_impl (inlined)
+               __libc_start_call_main
+               main
+               |          
+               |--2.65%--matrix_init_sparse
+               |          rand
+               |          __random
+               |          __aarch64_cas4_acq
+               |          
+                --1.52%--rand
+                          __random
+                          __aarch64_cas4_acq
+
+     3.41%     3.03%             8  test-gather-loa  libc.so.6                [.] __aarch64_swp4_rel
+            |          
+             --3.03%--_start
+                       __libc_start_main_impl (inlined)
+                       __libc_start_call_main
+                       main
+                       |          
+                       |--1.89%--matrix_init_sparse
+                       |          rand
+                       |          __random
+                       |          __aarch64_swp4_rel
+                       |          
+                        --1.14%--rand
+                                  __random
+                                  __aarch64_swp4_rel
+
+     1.89%     0.38%             1  test-gather-loa  [kernel.kallsyms]        [k] vdec_timer_isr
+            |          
+             --1.52%--vdec_timer_isr
+                       vdec_submit_job_to_vgs
+                       |          
+                        --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] el0_irq_naked
+            |
+            ---el0_irq_naked
+               gic_handle_irq
+               __handle_domain_irq
+               irq_exit
+               __softirqentry_text_start
+               run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] gic_handle_irq
+            |
+            ---gic_handle_irq
+               __handle_domain_irq
+               irq_exit
+               __softirqentry_text_start
+               run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] __handle_domain_irq
+            |
+            ---__handle_domain_irq
+               irq_exit
+               __softirqentry_text_start
+               run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] irq_exit
+            |
+            ---irq_exit
+               __softirqentry_text_start
+               run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] __softirqentry_text_start
+            |
+            ---__softirqentry_text_start
+               run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] run_timer_softirq
+            |
+            ---run_timer_softirq
+               expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] expire_timers
+            |
+            ---expire_timers
+               call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.89%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] call_timer_fn
+            |
+            ---call_timer_fn
+               vdec_timer_isr
+               |          
+                --1.52%--vdec_submit_job_to_vgs
+                          |          
+                           --0.76%--osal_spin_unlock_irqrestore
+
+     1.52%     0.38%             1  test-gather-loa  [kernel.kallsyms]        [k] vdec_submit_job_to_vgs
+            |          
+             --1.14%--vdec_submit_job_to_vgs
+                       |          
+                        --0.76%--osal_spin_unlock_irqrestore
+
+     0.76%     0.76%             2  test-gather-loa  [kernel.kallsyms]        [k] osal_spin_unlock_irqrestore
+            |
+            ---_start
+               __libc_start_main_impl (inlined)
+               __libc_start_call_main
+               main
+
+     0.38%     0.38%             1  test-gather-loa  [kernel.kallsyms]        [k] __wake_up_common_lock
+     0.38%     0.38%             1  test-gather-loa  [kernel.kallsyms]        [k] clear_page
+     0.38%     0.00%             0  test-gather-loa  libc.so.6                [.] __memset_generic (inlined)
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] el0_sync
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] el0_sync_handler
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] el0_da
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] do_mem_abort
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] do_translation_fault
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] do_page_fault
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] handle_mm_fault
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] do_anonymous_page
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] alloc_pages_vma
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] __alloc_pages
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] get_page_from_freelist
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] osal_wakeup
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] __wake_up
+     0.38%     0.00%             0  test-gather-loa  [kernel.kallsyms]        [k] prep_new_page
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

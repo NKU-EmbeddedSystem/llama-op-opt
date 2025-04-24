@@ -1,0 +1,9 @@
+WARNING: perf not found for kernel 5.10.0+
+
+  You may need to install the following packages for this specific kernel:
+    linux-tools-5.10.0+-5.10.0+
+    linux-cloud-tools-5.10.0+-5.10.0+
+
+  You may also want to install one of the following packages to keep up to date:
+    linux-tools-5.10.0+
+    linux-cloud-tools-5.10.0+

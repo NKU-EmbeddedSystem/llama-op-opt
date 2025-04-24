@@ -1,0 +1,156 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 262  of event 'cpu-clock'
+# Event count (approx.): 2646464620
+#
+# Overhead  Command          Shared Object            Symbol                
+# ........  ...............  .......................  ......................
+#
+    89.31%  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_mul_mat_SVE
+            |
+            ---matrix_mul_mat_SVE
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+     4.20%  test-gather-loa  libc.so.6                [.] __aarch64_cas4_acq
+            |
+            ---__aarch64_cas4_acq
+               __random
+               rand
+               |          
+               |--2.67%--matrix_init_sparse
+               |          main
+               |          __libc_start_call_main
+               |          __libc_start_main_impl (inlined)
+               |          _start
+               |          
+                --1.53%--main
+                          __libc_start_call_main
+                          __libc_start_main_impl (inlined)
+                          _start
+
+     3.05%  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_init_sparse
+            |
+            ---matrix_init_sparse
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+     2.29%  test-gather-loa  libc.so.6                [.] __aarch64_swp4_rel
+            |
+            ---__aarch64_swp4_rel
+               __random
+               rand
+               |          
+               |--1.53%--matrix_init_sparse
+               |          main
+               |          __libc_start_call_main
+               |          __libc_start_main_impl (inlined)
+               |          _start
+               |          
+                --0.76%--main
+                          __libc_start_call_main
+                          __libc_start_main_impl (inlined)
+                          _start
+
+     0.38%  test-gather-loa  [kernel.kallsyms]        [k] vmacache_find
+     0.38%  test-gather-loa  libc.so.6                [.] __memmove_generic
+     0.38%  test-gather-loa  libc.so.6                [.] __random_r
+
+
+# Samples: 245  of event 'cycles'
+# Event count (approx.): 2620688978
+#
+# Overhead  Command          Shared Object            Symbol                
+# ........  ...............  .......................  ......................
+#
+    88.91%  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_mul_mat_SVE
+            |
+            ---matrix_mul_mat_SVE
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+     9.40%  test-gather-loa  libc.so.6                [.] __aarch64_swp4_rel
+            |
+            ---__aarch64_swp4_rel
+               __random
+               rand
+               matrix_init_sparse
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+     0.78%  test-gather-loa  libc.so.6                [.] __memcpy_generic
+            |
+            ---__memcpy_generic
+
+     0.77%  test-gather-loa  test-gather-load-MEDIUM  [.] matrix_init_sparse
+            |
+            ---matrix_init_sparse
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+     0.14%  test-gather-loa  ld-linux-aarch64.so.1    [.] strcmp
+     0.00%  test-gather-loa  [kernel.kallsyms]        [k] perf_output_begin
+     0.00%  perf-exec        [kernel.kallsyms]        [k] perf_event_exec
+
+
+# Samples: 5  of event 'syscalls:sys_enter_read'
+# Event count (approx.): 343
+#
+# Overhead  Command          Shared Object          Symbol                  
+# ........  ...............  .....................  ........................
+#
+   100.00%  test-gather-loa  ld-linux-aarch64.so.1  [.] __GI___read_nocancel
+            |
+            ---__GI___read_nocancel
+               open_verify (inlined)
+               _dl_map_object
+               openaux
+               _dl_catch_exception
+               _dl_map_object_deps
+               dl_main
+               _dl_sysdep_start
+               _dl_start_final (inlined)
+               _dl_start
+               _start
+               _start
+
+
+
+# Samples: 3  of event 'syscalls:sys_enter_write'
+# Event count (approx.): 3
+#
+# Overhead  Command          Shared Object  Symbol               
+# ........  ...............  .............  .....................
+#
+   100.00%  test-gather-loa  libc.so.6      [.] __GI___libc_write
+            |
+            ---__GI___libc_write
+               _IO_new_file_write (inlined)
+               new_do_write
+               _IO_new_do_write (inlined)
+               _IO_new_do_write (inlined)
+               _IO_new_file_overflow (inlined)
+               std::ostream::put
+               main
+               __libc_start_call_main
+               __libc_start_main_impl (inlined)
+               _start
+
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

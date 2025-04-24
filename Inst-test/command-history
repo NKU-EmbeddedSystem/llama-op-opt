@@ -1,0 +1,1000 @@
+ 1132  ./bypass_test 
+ 1133  vim bypass_test.cc
+ 1134  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1135  ./bypass_test 
+ 1136  vim bypass_test.cc
+ 1137  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1138  ./bypass_test 
+ 1139  vim bypass_test.cc
+ 1140  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1141  ./bypass_test 
+ 1142  vim bypass_test.cc
+ 1143  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1144  ./bypass_test 
+ 1145  vim bypass_test.cc
+ 1146  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1147  vim bypass_test.cc
+ 1148  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1149  ./bypass_test 
+ 1150  vim bypass_test.cc
+ 1151  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1152  ./bypass_test 
+ 1153  vim bypass_test.cc
+ 1154  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1155  ./bypass_test 
+ 1156  vim bypass_test.cc
+ 1157  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1158  ./bypass_test 
+ 1159  vim bypass_test.cc
+ 1160  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1161  ./bypass_test 
+ 1162  vim bypass_test.cc
+ 1163  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1164  ./bypass_test 
+ 1165  vim bypass_test.cc
+ 1166  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1167  vim bypass_test.cc
+ 1168  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1169  vim bypass_test.cc
+ 1170  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1171  ./bypass_test 
+ 1172  vim bypass_test.cc
+ 1173  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1174  ./bypass_test 
+ 1175  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1176  ./bypass_test 
+ 1177  vim bypass_test.cc
+ 1178  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1179  ./bypass_test 
+ 1180  vim bypass_test.cc
+ 1181  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1182  ./bypass_test 
+ 1183  vim bypass_test.cc
+ 1184  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1185  ./bypass_test 
+ 1186  vim bypass_test.cc
+ 1187  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1188  ./bypass_test 
+ 1189  vim bypass_test.cc
+ 1190  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1191  ./bypass_test 
+ 1192  vim bypass_test.cc
+ 1193  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1194  ./bypass_test 
+ 1195  vim bypass_test.cc
+ 1196  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1197  ./bypass_test 
+ 1198  vim bypass_test.cc
+ 1199  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1200  ./bypass_test 
+ 1201  vim bypass_test.cc
+ 1202  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1203  vim bypass_test.cc
+ 1204  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1205  vim bypass_test.cc
+ 1206  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1207  vim bypass_test.cc
+ 1208  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1209  vim bypass_test.cc
+ 1210  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1211  vim bypass_test.cc
+ 1212  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1213  vim bypass_test.cc
+ 1214  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1215  vim bypass_test.cc
+ 1216  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1217  vim bypass_test.cc
+ 1218  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1219  ./bypass_test 
+ 1220  vim bypass_test.cc
+ 1221  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1222  ./bypass_test 
+ 1223  vim bypass_test.cc
+ 1224  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1225  ./bypass_test 
+ 1226  vim bypass_test.cc
+ 1227  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1228  vim bypass_test.cc
+ 1229  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1230  ./bypass_test 
+ 1231  vim bypass_test.cc
+ 1232  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1233  vim bypass_test.cc
+ 1234  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1235  vim bypass_test.cc
+ 1236  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1237  vim bypass_test.cc
+ 1238  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1239  ./bypass_test 
+ 1240  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1241  vim bypass_test.cc
+ 1242  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1243  vim bypass_test.cc
+ 1244  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1245  ./bypass_test 
+ 1246  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1247  vim bypass_test.cc
+ 1248  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1249  ./bypass_test 
+ 1250  vim bypass_test.cc
+ 1251  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1252  ./bypass_test 
+ 1253  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1254  vim bypass_test.cc
+ 1255  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1256  vim bypass_test.cc
+ 1257  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1258  ./bypass_test 
+ 1259  ls
+ 1260  shutdown
+ 1261  ls
+ 1262  cd zby
+ 1263  ls
+ 1264  vim bypass_test.cc
+ 1265  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1266  ./bypass_test 
+ 1267  vim bypass_test.cc
+ 1268  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1269  vim bypass_test.cc
+ 1270  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1271  ./bypass_test 
+ 1272  vim bypass_test.cc
+ 1273  g++ bypass_test.cc -march=armv8-a+sve  -O3 -o bypass_test
+ 1274  ./bypass_test 
+ 1275  ls
+ 1276  cd llama.cpp/
+ 1277  ls
+ 1278  cd bin
+ 1279  ls
+ 1280  cd build/
+ 1281  ./bin/test-backend-ops perf -b CPU
+ 1282  objdump -S ./bin/test-backend-ops
+ 1283  vim .
+ 1284  ls
+ 1285  cd ..
+ 1286  ls
+ 1287  rm -r build/
+ 1288  ls
+ 1289  cmake .. -DCMAKE_BUILD_TYPE=Release
+ 1290  cmake --build . --target test-backend-ops -j
+ 1291  ./bin/test-backend-ops perf -b CPU
+ 1292  objdum -S ./bin/test-backend-ops
+ 1293  objdump -S ./bin/test-backend-ops
+ 1294  objdump -S ./bin/test-backend-ops > temp
+ 1295  vim temp
+ 1296  ls
+ 1297  cd ..
+ 1298  ls
+ 1299  cd build/
+ 1300  cmake --build . -j
+ 1301  ls
+ 1302  cd ggml/
+ 1303  ls
+ 1304  cd src
+ 1305  ls
+ 1306  objdump -S libggml.so > temp
+ 1307  ls
+ 1308  vim temp
+ 1309  shutdown
+ 1310  ls
+ 1311  cd zby
+ 1312  ls
+ 1313  cd llama.cpp/
+ 1314  ls
+ 1315  vim .
+ 1316  ls
+ 1317  rm -r build/
+ 1318  mkdir build && cd build
+ 1319  cmake .. -DCMAKE_BUILD_TYPE=Release
+ 1320  cmake --build . -j
+ 1321  shutdown
+ 1322  ls
+ 1323  cd zby
+ 1324  ls
+ 1325  cd llama.cpp/
+ 1326  ls
+ 1327  cd build/
+ 1328  ls
+ 1329  ./bin/test-backend-ops perf -b CPU
+ 1330  ls
+ 1331  cd ggml/
+ 1332  ls
+ 1333  vim src
+ 1334  cd src
+ 1335  ls
+ 1336  objdump -S libggml.so > temp
+ 1337  vim temp
+ 1338  cd ..
+ 1339  cmake --build . -j
+ 1340  objdump -S libggml.so > temp
+ 1341  cd ggml
+ 1342  ls
+ 1343  cd  src
+ 1344  objdump -S libggml.so > temp
+ 1345  vim temp
+ 1346  cd ..
+ 1347  ls
+ 1348  gdb -args ./bin/test-backend-ops perf -b CPU
+ 1349  ls
+ 1350  vim .
+ 1351  cmake --build . -j
+ 1352  ./bin/test-backend-ops perf -b CPU
+ 1353  ls
+ 1354  cd ggml/
+ 1355  ls
+ 1356  cd src/
+ 1357  ls
+ 1358  objdump -S libggml.so > temp
+ 1359  vim temp
+ 1360  vim .
+ 1361  cd ..
+ 1362  cmake --build . -j
+ 1363  ls
+ 1364  cd ggml/
+ 1365  ls
+ 1366  cd src
+ 1367  ls
+ 1368  objdump -S libggml.so > temp
+ 1369  vim temp
+ 1370  vim .
+ 1371  cd ..
+ 1372  ls
+ 1373  cmake --build . -j
+ 1374  cd ggml/
+ 1375  ks
+ 1376  ls
+ 1377  cd src/
+ 1378  objdump -S libggml.so > temp
+ 1379  vim temp
+ 1380  vim .
+ 1381  cd ../..
+ 1382  ls
+ 1383  cmake --build . -j
+ 1384  ls
+ 1385  cd ggml/
+ 1386  ls
+ 1387  cd src/
+ 1388  ls
+ 1389  objdump -S libggml.so > temp
+ 1390  vim temp
+ 1391  ls
+ 1392  cd ..
+ 1393  ls
+ 1394  cd ..
+ 1395  vim .
+ 1396  cmake --build . -j
+ 1397  ./bin/test-backend-ops perf -b CPU
+ 1398  vim .
+ 1399  ls
+ 1400  cd ..
+ 1401  ls
+ 1402  rm -r build/
+ 1403  (base) root@davinci-mini:~/zby/llama.cpp/build#
+ 1404  mkdir build && cd build
+ 1405  cmake ..
+ 1406  cmake --build . --target
+ 1407  cmake --build . --target test-backend-ops -j
+ 1408  ls
+ 1409  cd ..
+ 1410  ls
+ 1411  rm -r build/
+ 1412  ls
+ 1413  mkdir build && cd build
+ 1414  cmake --build . -j
+ 1415  ./bin/test-backend-ops perf -b CPU
+ 1416  exit+
+ 1417  uname -a
+ 1418  ls
+ 1419  cd zby
+ 1420  cd llama.cpp/
+ 1421  ls
+ 1422  vim .
+ 1423  cd build/
+ 1424  cmake --build . --target test-backend-ops -j
+ 1425  ./bin/test-backend-ops perf -b CPU
+ 1426  shutdown
+ 1427  ls
+ 1428  cd llama.cpp
+ 1429  ls
+ 1430  cd zby
+ 1431  ls
+ 1432  cd llama.cpp/
+ 1433  ls
+ 1434  cd tests
+ 1435  ls
+ 1436  vim test-backend-ops.cpp 
+ 1437  cp test-backend-ops.cpp test-backend-ops_.cpp
+ 1438  vim test-backend-ops.cpp 
+ 1439  vim test-backend-ops_.cpp 
+ 1440  cd ..
+ 1441  ls
+ 1442  cd build/
+ 1443  cmake --build . --target test-backend-ops -j
+ 1444  ls
+ 1445  cd ..
+ 1446  ls
+ 1447  cd tests/
+ 1448  ls
+ 1449  mv test-backend-ops.cpp 
+ 1450  ls
+ 1451  mv test-backend-ops.cpp
+ 1452  rm test-backend-ops.cpp
+ 1453  mv test-backend-ops_.cpp test-backend-ops.cpp 
+ 1454  vim test-backend-ops.cpp 
+ 1455  cd ..
+ 1456  cd build/
+ 1457  cmake --build . --target test-backend-ops -j
+ 1458  vim .
+ 1459  cmake --build . --target test-backend-ops -j
+ 1460  ./bin/test-backend-ops perf -b CPU
+ 1461  vim .
+ 1462  cd zby
+ 1463  ls
+ 1464  cd llama.cpp/
+ 1465  ls
+ 1466  vim tests/
+ 1467  cd build/
+ 1468  ls
+ 1469  cmake --build . --target test-backend-ops -j
+ 1470  ./bin/test-backend-ops perf -b CPU
+ 1471  ./bin/test-backend-ops test -b CPU
+ 1472  ls
+ 1473  cd ..
+ 1474  ls
+ 1475  cd ..
+ 1476  ls
+ 1477  vim bypass_test
+ 1478  vim bypass_test.cc 
+ 1479  ls
+ 1480  g++ bypass_test -O3 -march=armv8+sve -o bypass
+ 1481  g++ bypass_test.cc -O3 -march=armv8+sve -o bypass
+ 1482  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1483  ./bypass
+ 1484  vim bypass_test.cc 
+ 1485  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1486  vim bypass_test.cc 
+ 1487  ./bypass
+ 1488  vim bypass_test.cc 
+ 1489  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1490  ./bypass
+ 1491  vim bypass_test.cc 
+ 1492  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1493  vim bypass_test.cc 
+ 1494  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1495  vim bypass_test.cc 
+ 1496  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1497  ./bypass
+ 1498  vim bypass_test.cc 
+ 1499  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1500  vim bypass_test.cc 
+ 1501  ./bypass
+ 1502  vim bypass_test.cc 
+ 1503  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1504  ./bypass
+ 1505  vim bypass_test.cc 
+ 1506  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1507  ./bypass
+ 1508  g++ bypass_test.cc -O3 -march=armv8-a+sve -o bypass
+ 1509  ./bypass
+ 1510  ls
+ 1511  shutdown
+ 1512  ls
+ 1513  conda activate dqsj
+ 1514  cd dqsj/
+ 1515  ls
+ 1516  cd ascend-llm/
+ 1517  ls
+ 1518  cd inference/
+ 1519  ls
+ 1520  python app.py --model /zh/temp/qwen2-0_5B_quant_dqsj.om          --hf-dir /root/dqsj/ascend-llm/export_llama/model/Qwen2_lora --engine acl         --sampling greedy --sampling_value 10  --temperature 0.7 --kv_size 1024
+ 1521  ls
+ 1522  cd /
+ 1523  ls
+ 1524  cd zh
+ 1525  ls
+ 1526  cd ..
+ 1527  ls
+ 1528  shutdown
+ 1529  ls
+ 1530  vim login.py 
+ 1531  ls
+ 1532  vim build.sh 
+ 1533  ls
+ 1534  vim jz
+ 1535  ls
+ 1536  cd dqsj
+ 1537  ls
+ 1538  cd ..
+ 1539  ls
+ 1540  zip -r dqsj.zip dqsj
+ 1541  ls
+ 1542  zip -r zby.zip zby
+ 1543  ls
+ 1544  cd zby
+ 1545  ls
+ 1546  rm gate_up.zip 
+ 1547  ls
+ 1548  vim run.sh 
+ 1549  vim test.cc
+ 1550  ls
+ 1551  pwd
+ 1552  rm -r mindformers/
+ 1553  rm -r samples
+ 1554  ls
+ 1555  cd ..
+ 1556  ls
+ 1557  zip -r zby.zip zby
+ 1558  ls
+ 1559  pwd
+ 1560  rm dqsj.zip
+ 1561  rm zby.zip
+ 1562  ls
+ 1563  cd zby
+ 1564  ls
+ 1565  rm *.S
+ 1566  ls
+ 1567  vim temp.txt
+ 1568  ls
+ 1569  vim test.cc
+ 1570  shutdown
+ 1571  ls
+ 1572  shutdown
+ 1573  lscpu
+ 1574  ls
+ 1575  lscpu
+ 1576  shurdown
+ 1577  shutdown
+ 1578  ls
+ 1579  cd zby
+ 1580  ls
+ 1581  sudo usermod -aG sudo zby
+ 1582  exit
+ 1583  ls
+ 1584  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1585  ls
+ 1586  cd llama-op-opt/
+ 1587  ls
+ 1588  cd tests/
+ 1589  ls
+ 1590  cd ..
+ 1591  ls
+ 1592  cd Inst-test/
+ 1593  ls
+ 1594  ./build.sh
+ 1595  ls
+ 1596  cd llama-op-opt/ls
+ 1597  cd llama-op-opt/
+ 1598  ls
+ 1599  cd Inst-test/
+ 1600  ls
+ 1601  ./build.sh
+ 1602  sudo chmod 777 ./build.sh
+ 1603  ./build.sh
+ 1604  lscpu
+ 1605  ./build.sh
+ 1606  ls ./build
+ 1607  rm test-simple
+ 1608  ls
+ 1609  ls ./build
+ 1610  ./biuld.sh
+ 1611  ls
+ 1612  ./build.sh
+ 1613  ./build/test-simple 
+ 1614  ls
+ 1615  ./build.sh 
+ 1616  ./build/test-simple-sve 
+ 1617  ls
+ 1618  cd zby
+ 1619  ls
+ 1620  vim .
+ 1621  ls
+ 1622  exit
+ 1623  ls
+ 1624  cd /home/zby/
+ 1625  ls
+ 1626  cd SVE
+ 1627  ls
+ 1628  cd llama-op-opt/
+ 1629  ls
+ 1630  git log
+ 1631  git branch
+ 1632  ls
+ 1633  cp -r Inst-test/ ..
+ 1634  ls
+ 1635  ls ..
+ 1636  ls
+ 1637  cd ..
+ 1638  ls
+ 1639  cd Inst-test/
+ 1640  ls
+ 1641  cd ..
+ 1642  ls
+ 1643  cd llama-op-opt/
+ 1644  ls
+ 1645  cd ..
+ 1646  ls
+ 1647  rm -r -f llama-op-opt/
+ 1648  ls
+ 1649  exit
+ 1650  ls
+ 1651  cd /home
+ 1652  ls
+ 1653  cd zby
+ 1654  ls
+ 1655  cd SVE
+ 1656  ls
+ 1657  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1658  ls
+ 1659  cd llama-op-opt/
+ 1660  ls
+ 1661  git pull
+ 1662  ls
+ 1663  git branch
+ 1664  git checkout dev
+ 1665  ls
+ 1666  git checkout -b dev
+ 1667  ls
+ 1668  git branch
+ 1669  ls
+ 1670  git add .
+ 1671  git commit -m "init dev branch"
+ 1672  git push
+ 1673  git push --set-upstream origin dev
+ 1674  ls
+ 1675  git branch
+ 1676  ls
+ 1677  git add .
+ 1678  git commit -m "Add common function: init & print"
+ 1679  git push
+ 1680  git config
+ 1681  ls
+ 1682  git config user.name
+ 1683  git config --global user.name "By-gitee"
+ 1684  ls
+ 1685  ls ..
+ 1686  ls
+ 1687  ls ..
+ 1688  ls
+ 1689  rm -r -f Inst-test/
+ 1690  ls
+ 1691  git add .
+ 1692  git commit -m "fix"
+ 1693  git push
+ 1694  cd ..
+ 1695  ls
+ 1696  git config
+ 1697  git config --get-all
+ 1698  git config --get
+ 1699  git config show
+ 1700  git config -get-all
+ 1701  git config --get-all
+ 1702  git config
+ 1703  git configls
+ 1704  ls
+ 1705  rm -r -f llama-op-opt
+ 1706  ls
+ 1707  git config user.name
+ 1708  git config --global user.email "1121046037@qq.com"
+ 1709  ls
+ 1710  git config user.name
+ 1711  git config user.email
+ 1712  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1713  clear
+ 1714  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1715  clear
+ 1716  ls
+ 1717  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1718  clear
+ 1719  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1720  clear
+ 1721  git clone https://github.com/NKU-EmbeddedSystem/llama-op-opt.git
+ 1722  ls
+ 1723  cd llama-op-opt/
+ 1724  ls
+ 1725  git checkout -b dev
+ 1726  ls
+ 1727  git branch
+ 1728  ls
+ 1729  git push --up-stream origin dev
+ 1730  git push
+ 1731  git push --set-upstream origin dev
+ 1732  ls
+ 1733  git log
+ 1734  ls
+ 1735  cp -r ../Inst-test/ .
+ 1736  ls
+ 1737  git add .
+ 1738  git commit -m "Add common : init & print"
+ 1739  git log
+ 1740  git push
+ 1741  ls
+ 1742  cd Inst-test/
+ 1743  ls
+ 1744  time ./build/test-simple
+ 1745  ls
+ 1746  vim .
+ 1747  ls
+ 1748  cd ..
+ 1749  ls
+ 1750  git branch
+ 1751  git add .
+ 1752  git commit -m "finish gather load mul_mat;TODO: test code"
+ 1753  git push
+ 1754  exit
+ 1755  shutdown
+ 1756  ls
+ 1757  cd llama-op-opt/
+ 1758  ls
+ 1759  cd Inst-test/
+ 1760  ./build.sh
+ 1761  ./build/test-simple
+ 1762  ./build.sh
+ 1763  ./build/test-simple
+ 1764  cd llama-op-opt/
+ 1765  ls
+ 1766  cd Inst-test/
+ 1767  ls
+ 1768  ./build.sh
+ 1769  ./build/test-simple
+ 1770  ./build/test-simple-sve 
+ 1771  ./build.sh
+ 1772  ./build/test-simple-sve 
+ 1773  ./build/test-simple
+ 1774  ./build.sh
+ 1775  ./build/test-simple
+ 1776  clang++ -v
+ 1777  ./build.sh
+ 1778  ./build/test-simple
+ 1779  ./build/test-simple-sve 
+ 1780  ./build/test-gather-load 
+ 1781  cd ..
+ 1782  ls
+ 1783  git add .
+ 1784  git commit -m "test successfully"
+ 1785  git push
+ 1786  cd Inst-test/
+ 1787  ls
+ 1788  ./build.sh
+ 1789  ./build/test-gather-load 
+ 1790  ./build.sh
+ 1791  ./build/test-gather-load 
+ 1792  ./build.sh 
+ 1793  ls
+ 1794  ./build/test-gather-load 
+ 1795  ./build.sh 
+ 1796  ./build/test-gather-load 
+ 1797  ./build.sh 
+ 1798  ./build/test-gather-load 
+ 1799  ./build.sh 
+ 1800  ./build/test-gather-load 
+ 1801  ./build.sh 
+ 1802  ./build/test-simple
+ 1803  ./build.sh 
+ 1804  ./build/test-simple
+ 1805  ./build/test-simple -s 20
+ 1806  ./build/test-simple
+ 1807  ./build.sh 
+ 1808  ./build/test-simple -s 20
+ 1809  ./build/test-gather-load -s 20
+ 1810  ./build.sh 
+ 1811  ./build/test-gather-load -s 20
+ 1812  ./build.sh 
+ 1813  ./build/test-gather-load -s 20
+ 1814  ./build/test-simple -s 20
+ 1815  ./build.sh 
+ 1816  ./build/test-gather-load -s 20
+ 1817  ./build/test-gather-load -s 80
+ 1818  ./build/test-simple -s 80
+ 1819  ./build/test-simple-sve -s 80
+ 1820  ./build/test-gather-load -s 80
+ 1821  ./build/test-gather-load -s 90
+ 1822  ./build.sh 
+ 1823  ./build/test-gather-load -s 90
+ 1824  ./build.sh 
+ 1825  ./build/test-gather-load -s 90
+ 1826  ./build.sh 
+ 1827  ls
+ 1828  sudo chmod 777 ./perf-test.sh
+ 1829  ls
+ 1830  ./perf-test.sh 
+ 1831  cd /
+ 1832  ls
+ 1833  cd root
+ 1834  cd zby
+ 1835  ls
+ 1836  vim run.sh
+ 1837  cd SVE
+ 1838  ls
+ 1839  cd ..
+ 1840  ls
+ 1841  cd /home/zby
+ 1842  ls
+ 1843  cd SVE
+ 1844  ls
+ 1845  cd llama-op-opt/
+ 1846  ls
+ 1847  cd Inst-test/
+ 1848  ls
+ 1849  ./build.sh 
+ 1850  ./perf-test.sh 
+ 1851  ./build.sh
+ 1852  ./perf-test.sh 
+ 1853  ./build.sh
+ 1854  ./perf-test.sh 
+ 1855  ./build.sh
+ 1856  ./perf-test.sh 
+ 1857  ls
+ 1858  cd llama-op-opt/
+ 1859  git add .
+ 1860  git commit -m "finish test script"
+ 1861  git push
+ 1862  git log 
+ 1863  git psuh
+ 1864  git push
+ 1865  shutdown
+ 1866  ls
+ 1867  cd /home/zby
+ 1868  ls
+ 1869  cd SVE
+ 1870  ls
+ 1871  cd llama-op-opt/
+ 1872  ls
+ 1873  git push
+ 1874  cd llama-op-opt/
+ 1875  ls
+ 1876  cd Inst-test/
+ 1877  ls
+ 1878  ./build/test-gather-load -s $sp
+ 1879  ./build/test-gather-load -s 80
+ 1880  ./build.sh
+ 1881  ./build/test-gather-load -s 80
+ 1882  ./build.sh
+ 1883  ./build/test-gather-load -s 80
+ 1884  ./build.sh
+ 1885  ./build/test-gather-load -s 80
+ 1886  ./perf-test.sh 
+ 1887  ./build/test-gather-load -s 80
+ 1888  ./build.sh
+ 1889  ./perf-test.sh 
+ 1890  ./build.sh
+ 1891  ./perf-test.sh 
+ 1892  ./build.sh
+ 1893  ./perf-test.sh 
+ 1894  ./build.sh
+ 1895  ./perf-test.sh 
+ 1896  ls
+ 1897  cd llama-op-opt/
+ 1898  ls
+ 1899  git add .
+ 1900  git commit -m "finish test"
+ 1901  git push
+ 1902  shutdown
+ 1903  ls
+ 1904  cd /home/zby
+ 1905  cd SVE
+ 1906  ls
+ 1907  cd llama-op-opt/
+ 1908  ls
+ 1909  git add .
+ 1910  git commit -m "update script"
+ 1911  git push
+ 1912  ls
+ 1913  cd zby
+ 1914  ls
+ 1915  vim SVE
+ 1916  vim .
+ 1917  ls
+ 1918  vim .
+ 1919  vim run.sh 
+ 1920  vim .
+ 1921  ls
+ 1922  cd zby
+ 1923  ls
+ 1924  vim .
+ 1925  ls
+ 1926  clang -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1927  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1928  ls
+ 1929  ./run.sh
+ 1930  ls
+ 1931  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1932  ./run.sh
+ 1933  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1934  ./test
+ 1935  ./run.sh
+ 1936  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1937  ./run.sh 
+ 1938  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1939  ./test
+ 1940  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1941  ./test
+ 1942  clang++ -O0 -march=armv8-a+sve bypass_test.cc -o test
+ 1943  ./test
+ 1944  ./run.sh 
+ 1945  ls
+ 1946  cd /home/zby
+ 1947  ls
+ 1948  cd SVE/
+ 1949  ls
+ 1950  cd llama-op-opt/
+ 1951  ls
+ 1952  cd Inst-test/
+ 1953  ls
+ 1954  vim build
+ 1955  vim build.sh 
+ 1956  shutdown
+ 1957  top
+ 1958  exit
+ 1959  shutdown
+ 1960  git branch
+ 1961  ls
+ 1962  perf ./build/test-gather-load-MEDIUM -s 0
+ 1963  apt-get insatll perf
+ 1964  apt-get install perf
+ 1965  strace ./build/test-gather-load-MEDIUM -s 0
+ 1966  apt-get install strace
+ 1967  su zby
+ 1968  ls
+ 1969  cd ~
+ 1970  ls
+ 1971  cd Ascend/
+ 1972  ls
+ 1973  apt-get clean
+ 1974  sudo apt autoclean      # 仅删除无法再下载的旧包
+ 1975  du -sh /var/cache/apt/archives/
+ 1976  su zby
+ 1977  cd ..
+ 1978  ls
+ 1979  cd jz
+ 1980  ls
+ 1981  cd ..
+ 1982  ls
+ 1983  cd hjx
+ 1984  ls
+ 1985  cd ..
+ 1986  ls
+ 1987  cd lxz
+ 1988  ls
+ 1989  cd ..
+ 1990  ls
+ 1991  cd zzb
+ 1992  ls
+ 1993  cd ..
+ 1994  ls
+ 1995  strace ./build/test-gather-load-MEDIUM -s 0
+ 1996  uame -a
+ 1997  uname -a
+ 1998  strace ./build/test-gather-load-MEDIUM -s 0
+ 1999  exit
+ 2000  ls
+ 2001  su zby
+ 2002  du -sh ./*
+ 2003  cd ~
+ 2004  ls
+ 2005  du -sh ./*
+ 2006  cd samples/
+ 2007  ls
+ 2008  vim .
+ 2009  ls
+ 2010* 
+ 2011  cd /
+ 2012  du -sh ./*
+ 2013  free -h
+ 2014  swapon -show
+ 2015  cd var
+ 2016  ls
+ 2017  du -sh ./*
+ 2018  cd ..
+ 2019  ls
+ 2020  cd root
+ 2021  ls
+ 2022  du -sh ./*
+ 2023  rm -rf ./samples/
+ 2024  ls
+ 2025  cd lxz
+ 2026  ls
+ 2027  cd ..
+ 2028  ls
+ 2029  cd jz
+ 2030  ls
+ 2031  cd ..
+ 2032  ls
+ 2033  sudo apt-get install strace
+ 2034  su zby
+ 2035  ls
+ 2036  cd /home/zby
+ 2037  ls
+ 2038  cd SVE
+ 2039  ls
+ 2040  cd llama-op-opt/
+ 2041  cd Inst-test/
+ 2042  ls
+ 2043  strace ./build/test-gather-load-MEDIUM -s 0 > strace.txt
+ 2044  strace ./build/test-gather-load-MEDIUM -s 0 1> strace.txt
+ 2045  strace ./build/test-gather-load-MEDIUM -s 0 2> strace.txt
+ 2046  sudo apt update
+ 2047  sudo apt install linux-tools-common linux-tools-generic linux-tools-$(uname -r)
+ 2048  sudo apt install linux-tools-common linux-tools-generic linux-tools
+ 2049  sudo apt install linux-tools-common linux-tools-generic
+ 2050  perf ./build/test-gather-load-MEDIUM -s 0 2> strace.txt
+ 2051  sudo apt install linux-tools-5.10.0+-5.10.0+
+ 2052  sudo apt install linux-tools-5.10.0
+ 2053  sudo apt install linux-tools-5
+ 2054  sudo apt-get install linux-tools-5.10.0+-5.10.0+
+ 2055  sudo apt-get install linux-tools-5.10.0
+ 2056  sudo apt-get upgrade
+ 2057  sudo apt-get install linux-tools-5.10.0
+ 2058  sudo apt-get install linux-tools
+ 2059  perf
+ 2060  sudo apt-get install linux-tools-5.10.0+
+ 2061  sudo apt-get install linux-tools-generic
+ 2062  perf
+ 2063  cd /usr/bin
+ 2064  ls
+ 2065  perf
+ 2066  cd /usr/lib/linux-tools/5.15.0-138-generic/perf /usr/bin/perf
+ 2067  sudo ln -s /usr/lib/linux-tools/5.15.0-138-generic/perf /usr/bin/perf
+ 2068  cd /usr/lib/linux-tools/5.15.0-138-generic
+ 2069  ls
+ 2070  perf
+ 2071  /usr/lib/linux-tools/5.15.0-138-generic/perf 
+ 2072  ls
+ 2073  cd ~
+ 2074  ls
+ 2075  cd /home
+ 2076  cd zby
+ 2077  ls
+ 2078  cd SVE
+ 2079  ls
+ 2080  cd llama-op-opt/
+ 2081  ls
+ 2082  cd Inst-test/
+ 2083  ls
+ 2084  perf ./build/test-gather-load-MEDIUM -s 0
+ 2085  sudo ln -s /usr/lib/linux-tools/5.15.0-138-generic/perf perf
+ 2086  perf ./build/test-gather-load-MEDIUM -s 0
+ 2087  /usr/lib/linux-tools/5.15.0-138-generic/perf ./build/test-gather-load-MEDIUM -s 0
+ 2088  /usr/lib/linux-tools/5.15.0-138-generic/perf --help
+ 2089  /usr/lib/linux-tools/5.15.0-138-generic/perf bench
+ 2090  /usr/lib/linux-tools/5.15.0-138-generic/perf bench mem
+ 2091  /usr/lib/linux-tools/5.15.0-138-generic/perf bench memcpy
+ 2092  /usr/lib/linux-tools/5.15.0-138-generic/perf bench mem
+ 2093  /usr/lib/linux-tools/5.15.0-138-generic/perf bench mem all
+ 2094  /usr/lib/linux-tools/5.15.0-138-generic/perf mem ./build/test-gather-load-MEDIUM -s 0
+ 2095  perf list
+ 2096  /usr/lib/linux-tools/5.15.0-138-generic/perf list
+ 2097  /usr/lib/linux-tools/5.15.0-138-generic/perf -p ./build/test-gather-load-MEDIUM -s 0
+ 2098  /usr/lib/linux-tools/5.15.0-138-generic/perf record ./build/test-gather-load-MEDIUM -s 0
+ 2099  /usr/lib/linux-tools/5.15.0-138-generic/perf stat ./build/test-gather-load-MEDIUM -s 0
+ 2100  /usr/lib/linux-tools/5.15.0-138-generic/perf stat -e mem ./build/test-gather-load-MEDIUM -s 0
+ 2101  /usr/lib/linux-tools/5.15.0-138-generic/perf stat -e cache-miss ./build/test-gather-load-MEDIUM -s 0
+ 2102  /usr/lib/linux-tools/5.15.0-138-generic/perf list
+ 2103  /usr/lib/linux-tools/5.15.0-138-generic/perf stat -e cache-missed ./build/test-gather-load-MEDIUM -s 0
+ 2104  /usr/lib/linux-tools/5.15.0-138-generic/perf stat -e cache-misses ./build/test-gather-load-MEDIUM -s 0
+ 2105  bpftrace
+ 2106  sudo apt install bpftrace
+ 2107  bpftrace
+ 2108  sudo perf record -e cpu-clock -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2109  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cpu-clock -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2110  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio | grep -A 10 'matrix_mul_mat_SVE'
+ 2111  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio | grep -A 10 'matrix_mul_mat_SVE' > temp
+ 2112  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio | grep 'matrix_mul_mat_SVE' > temp
+ 2113  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio
+ 2114  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio > temp
+ 2115  sudo perf record -e cache-miss -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2116  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cache-misses -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2117  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio > temp-cache-misses
+ 2118  ./build.sh 
+ 2119  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cpu-clock -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2120  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio > temp-cpu-cycle
+ 2121  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cache-misses -F 99 -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2122  /usr/lib/linux-tools/5.15.0-138-generic/perf report -n --stdio > temp-cache-miss
+ 2123  ./build.sh
+ 2124  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cpu-clock,cycles,syscalls:sys_enter_read,syscalls:sys_enter_write   -F 99  -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2125  sudo perf report --stdio --no-children > temp
+ 2126  /usr/lib/linux-tools/5.15.0-138-generic/perf report --stdio --no-children > temp
+ 2127  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cpu-clock,cycles,syscalls:sys_read,syscalls:sys_write   -F 99  -g --call-graph dwarf ./build/test-gather-load-MEDIUM -s 0
+ 2128  /usr/lib/linux-tools/5.15.0-138-generic/perf record -e cpu-cycles,instructions,L1-dcache-load-misses,L1-dcache-loads -F 99  -g ./build/test-gather-load-MEDIUM -s 0
+ 2129  perf annotate -s matrix_mul_mat_SVE
+ 2130  /usr/lib/linux-tools/5.15.0-138-generic/perf annotate -s matrix_mul_mat_SVE
+ 2131  history > command-history
