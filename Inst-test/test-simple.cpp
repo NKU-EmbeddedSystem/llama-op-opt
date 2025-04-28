@@ -42,6 +42,8 @@ float C[M*N];
 
 // Simply mul mat two matrix
 void matrix_mul_mat(float* matrix_a, float* matrix_b, float* matrix_c,int m, int k, int n){
+    // initialize matrix_c
+    matrix_init_zero(matrix_c,m,n); 
     for(int j=0;j<n;j++){
         for(int i=0;i<m;i++){
             float sum = 0.0f;
@@ -80,19 +82,19 @@ int main(int argc, char* argv[]){
     clock_t start_time, end_time, total_time;
 
     start_time = clock();
-    // for(int i = 0;i<5;i++) {
+    for(int i = 0;i<5;i++) {
         matrix_mul_mat(A, B, C, M, K, N);
-    // } 
+    } 
     end_time = clock();
 
     total_time = end_time - start_time;
-    std::cout<<"A: "<<std::endl;
-    print_matrix(A, M, K);
-    std::cout<<"B: "<<std::endl;
-    print_matrix(B, K, N);
-    std::cout<<"C: "<<std::endl;
-    print_matrix(C, M, N);
-    check_result(A, B, C, M, K, N);
-    std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC << " seconds to execute.  Sparsity: "<< sp <<std::endl;
+    // std::cout<<"A: "<<std::endl;
+    // print_matrix(A, M, K);
+    // std::cout<<"B: "<<std::endl;
+    // print_matrix(B, K, N);
+    // std::cout<<"C: "<<std::endl;
+    // print_matrix(C, M, N);
+    // check_result(A, B, C, M, K, N);
+    std::cout<<"Simple mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/5 << " seconds to execute.  Sparsity: "<< sp <<std::endl;
     return 0;
 }

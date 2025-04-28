@@ -1,0 +1,22 @@
+Single-core SpMM took 10.3752 seconds to execute. Sparsity: 0
+Multi-core SpMM (3 threads) took 16.9905 seconds to execute. Sparsity: 0
+Single-core SpMM took 8.7238 seconds to execute. Sparsity: 10
+Multi-core SpMM (3 threads) took 15.2435 seconds to execute. Sparsity: 10
+Single-core SpMM took 7.71084 seconds to execute. Sparsity: 20
+Multi-core SpMM (3 threads) took 13.325 seconds to execute. Sparsity: 20
+Single-core SpMM took 6.73573 seconds to execute. Sparsity: 30
+Multi-core SpMM (3 threads) took 11.5022 seconds to execute. Sparsity: 30
+Single-core SpMM took 5.76527 seconds to execute. Sparsity: 40
+Multi-core SpMM (3 threads) took 9.7158 seconds to execute. Sparsity: 40
+Single-core SpMM took 4.80225 seconds to execute. Sparsity: 50
+Multi-core SpMM (3 threads) took 7.98589 seconds to execute. Sparsity: 50
+Single-core SpMM took 3.84198 seconds to execute. Sparsity: 60
+Multi-core SpMM (3 threads) took 6.25487 seconds to execute. Sparsity: 60
+Single-core SpMM took 2.85314 seconds to execute. Sparsity: 70
+Multi-core SpMM (3 threads) took 4.46302 seconds to execute. Sparsity: 70
+Single-core SpMM took 1.69668 seconds to execute. Sparsity: 80
+Multi-core SpMM (3 threads) took 2.41487 seconds to execute. Sparsity: 80
+Single-core SpMM took 0.614337 seconds to execute. Sparsity: 90
+Multi-core SpMM (3 threads) took 0.65531 seconds to execute. Sparsity: 90
+Single-core SpMM took 0.0015504 seconds to execute. Sparsity: 100
+Multi-core SpMM (3 threads) took 0.0027914 seconds to execute. Sparsity: 100

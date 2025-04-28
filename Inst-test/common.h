@@ -249,3 +249,40 @@ void check_result(float* matrix_a, float* matrix_b, float* matrix_c, int m, int 
 
     delete[] expected;
 }
+// Check if matrix multiplication result is correct (CSR version)
+void check_result_CSR(const CSRMatrix& matrix_a, float* matrix_b, float* matrix_c, int m, int k, int n) {
+    float* expected = new float[m * n]();
+    
+    // Calculate expected result
+    for(int i = 0; i < m; i++) {
+        for(int j = 0; j < n; j++) {
+            float sum = 0.0f;
+            // 遍历当前行的非零元素
+            for(int q = matrix_a.row_ptrs[i]; q < matrix_a.row_ptrs[i+1]; q++) {
+                int col = matrix_a.col_indices[q];
+                sum += matrix_a.values[q] * matrix_b[col * n + j];
+            }
+            expected[i * n + j] = sum;
+        }
+    }
+
+    // Compare results
+    bool correct = true;
+    float max_diff = 0.0f;
+    for(int i = 0; i < m * n; i++) {
+        float diff = std::abs(matrix_c[i] - expected[i]);
+        max_diff = std::max(max_diff, diff);
+        if(diff > 1e-4) {
+            correct = false;
+            break;
+        }
+    }
+
+    if(correct) {
+        std::cout << "Result correct! Maximum error: " << max_diff << std::endl;
+    } else {
+        std::cout << "Result incorrect! Maximum error: " << max_diff << std::endl;
+    }
+
+    delete[] expected;
+}

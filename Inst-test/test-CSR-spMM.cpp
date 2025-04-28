@@ -14,6 +14,7 @@ float C_multi[M * N];
 
 // Single-core version of SpMM implementation
 void spmm_sve_single(const CSRMatrix& A, const float* B, float* C,int m, int k, int n) {
+    matrix_init_zero(C,m,n); 
     const int vl = svcntw();  // Get SVE vector length
     
     // Iterate through each row
@@ -58,6 +59,7 @@ void spmm_sve_single(const CSRMatrix& A, const float* B, float* C,int m, int k, 
 
 // Multi-core version of SpMM implementation
 void spmm_sve_multi(const CSRMatrix& A, const float* B, float* C, int m, int k, int n, int num_threads) {
+    matrix_init_zero(C,m,n); 
     #pragma omp parallel num_threads(num_threads)
     {
         const int vl = svcntw();  // Get SVE vector length
@@ -183,34 +185,38 @@ int main(int argc, char* argv[]) {
     
     // Test single-core version
     start_time = clock();
-    // for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 5; i++) {
         spmm_sve_single(A, B, C_single, M, K, N);
-    // }
+    }
     end_time = clock();
     total_time = end_time - start_time;
-    std::cout << "Single-core SpMM took " << (double)total_time / CLOCKS_PER_SEC 
+    std::cout << "Single-core SpMM took " << (double)total_time / CLOCKS_PER_SEC/5 
               << " seconds to execute. Sparsity: " << sp << std::endl;
 
     // Test multi-core version
     start_time = clock();
-    // for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 5; i++) {
         spmm_sve_multi(A, B, C_multi, M, K, N, num_threads);
-    // }
+    }
     end_time = clock();
     total_time = end_time - start_time;
     std::cout << "Multi-core SpMM (" << num_threads << " threads) took " 
-              << (double)total_time / CLOCKS_PER_SEC
+              << (double)total_time / CLOCKS_PER_SEC/5
               << " seconds to execute. Sparsity: " << sp << std::endl;
 
     // Optional: print result matrices for verification
-    std::cout<<"A: "<<std::endl;
-    print_CSR_matrix_dense(A);
-    std::cout<<"B: "<<std::endl;
-    print_matrix(B, K, N);
-    std::cout<<"C: "<<std::endl;
-    print_matrix(C_single, M, N);
-    std::cout<<"--------------------------------"<<std::endl;
-    print_matrix(C_multi, M, N);
+    // std::cout<<"A: "<<std::endl;
+    // print_CSR_matrix_dense(A);
+    // std::cout<<"B: "<<std::endl;
+    // print_matrix(B, K, N);
+    // std::cout<<"C: "<<std::endl;
+    // print_matrix(C_single, M, N);
+    // std::cout<<"--------------------------------"<<std::endl;
+    // print_matrix(C_multi, M, N);
+
+    // Check results
+    check_result_CSR(A, B, C_single, M, K, N);
+    check_result_CSR(A, B, C_multi, M, K, N);
 
     return 0;
 }

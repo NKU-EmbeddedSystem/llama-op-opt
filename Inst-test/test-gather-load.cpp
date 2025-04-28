@@ -14,6 +14,7 @@ void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m,
 
     assert(index_row.size()==index_col.size());
     
+    matrix_init_zero(matrix_c,m,n); 
     int vl = svcntw();
     // std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
     for(int j=0;j<n;j++){
@@ -99,20 +100,20 @@ int main(int argc, char* argv[]){
     clock_t start_time, end_time, total_time;
 
     start_time = clock();
-    // for(int i = 0;i<5;i++) {
+    for(int i = 0;i<5;i++) {
         matrix_mul_mat_SVE(A, B, C, M, K, N,index_row,index_col);
-    // } 
+    } 
     end_time = clock();
 
     total_time = end_time - start_time;
     // Optional: print result matrices for verification
-    std::cout<<"A: "<<std::endl;
-    print_matrix(A, M, K);
-    std::cout<<"B: "<<std::endl;
-    print_matrix(B, K, N);
-    std::cout<<"C: "<<std::endl;
-    print_matrix(C, M, N);
-    check_result(A, B, C, M, K, N);
+    // std::cout<<"A: "<<std::endl;
+    // print_matrix(A, M, K);
+    // std::cout<<"B: "<<std::endl;
+    // print_matrix(B, K, N);
+    // std::cout<<"C: "<<std::endl;
+    // print_matrix(C, M, N);
+    // check_result(A, B, C, M, K, N);
     std::cout<<"Sparse gather mul_mat took "<< (double)total_time / CLOCKS_PER_SEC/5 << " seconds to execute. Sparsity: "<< sp <<std::endl;
     return 0;
 }
