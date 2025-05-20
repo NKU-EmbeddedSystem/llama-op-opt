@@ -63,13 +63,17 @@ void matrix_init(float* mat, int64_t m, int64_t n, unsigned int seed){
 void matrix_init_zero(float* mat, int64_t m, int64_t n){
     memset(mat,0,sizeof(float)*m*n);
 }
-
 // Uniformly initialize a sparse matrix
 // threshold(0-100) 
 // sp <= threshold  -> mat[i] = 0
 void matrix_init_sparse(float* mat, int64_t m, int64_t n, unsigned int seed, int threshold, 
-    std::map<int,std::vector<int>>& index_row, std::map<int,std::vector<int>>& index_col){
+    std::vector<std::vector<int>>& index_row, std::vector<std::vector<int>>& index_col){
     srand(seed);
+    
+    // 初始化向量大小
+    index_row.resize(m);
+    index_col.resize(m);
+    
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j ++) {
             if(rand()%100 < threshold){
@@ -77,86 +81,106 @@ void matrix_init_sparse(float* mat, int64_t m, int64_t n, unsigned int seed, int
                 continue;
             }
 		    mat[i*n+j] = (float)rand() / (float)RAND_MAX;
-            if(index_row.find(i)==index_row.end()) {
-                index_row[i] = std::vector<int>();
-                index_col[i] = std::vector<int>();
-            }
             index_row[i].push_back(i*n+j);
             index_col[i].push_back(j*n);
         }
     }
-    // // Print test
-    // std::cout<<"index_row length:"<<index_row.size();
-    // for(auto i : index_row){
-    //     std::cout<<"row "<< i.first <<":[";
-    //     for (int j = 0; j < i.second.size(); j ++) {
-    //     std::cout<< i.second[j] <<" ";
-    //     }
-    //     std::cout<<"]"<<std::endl;
-    // }
-    // std::cout<<std::endl;
-    // std::cout<<"index_col length:"<<index_col.size();
-    // for(auto i : index_col){
-    //     std::cout<<"row "<< i.first <<":[";
-    //     for (int j = 0; j < i.second.size(); j ++) {
-    //     std::cout<< i.second[j] <<" ";
-    //     }
-    //     std::cout<<"]"<<std::endl;
-    // }
-    // std::cout<<std::endl;
+}
+
+// initialize a sparse matrix with pramas(float* mat, int64_t m, int64_t n, unsigned int seed, int threshold, std::vector<std::vector<float>>& value,std::vector<std::vector<int>>& index_col)
+// A_value A_index_col
+void matrix_init_sparse_vc(float* mat, int64_t m, int64_t n, unsigned int seed, int threshold, 
+    std::vector<std::vector<float>>& value, std::vector<std::vector<int>>& index_col) {
+    srand(seed);
+    memset(mat, 0, sizeof(float)*m*n);
+    
+    for (int i = 0; i < m; i++) {
+        value.push_back(std::vector<float>());
+        index_col.push_back(std::vector<int>());
+        for (int j = 0; j < n; j++) {
+            if(rand()%100 < threshold){
+                continue;
+            }
+            float val = (float)rand() / (float)RAND_MAX;
+            mat[i*n+j] = val;
+            value[i].push_back(val);
+            index_col[i].push_back(j*n);
+        }
+    }
+}
+
+// initialize a sparse matrix with pramas(float* mat, int64_t m, int64_t n, unsigned int seed, int threshold ,std::vector<std::vector<int>>& index_col)
+void matrix_init_sparse_c(float* mat, int64_t m, int64_t n, unsigned int seed, int threshold,
+    std::vector<std::vector<int>>& index_col) {
+    srand(seed);
+    memset(mat, 0, sizeof(float)*m*n);
+    
+    for (int i = 0; i < m; i++) {
+        index_col.push_back(std::vector<int>());
+        for (int j = 0; j < n; j++) {
+            if(rand()%100 < threshold){
+                continue;
+            }
+            float val = (float)rand() / (float)RAND_MAX;
+            mat[i*n+j] = val;
+            index_col[i].push_back(j);
+        }
+    }
 }
 
 
-
-//initialize a sparse matrix with CSRMatrix
+//初始化CSR稀疏矩阵
 void matrix_init_csr(CSRMatrix& mat, int64_t m, int64_t n, unsigned int seed, int threshold) {
     srand(seed);
     
-    // Initialize basic properties of CSR matrix
     mat.rows = m;
     mat.cols = n;
     mat.row_ptrs.resize(m + 1, 0);
 
-    // Temporary storage for non-zero elements in each row
-    std::vector<std::vector<float>> temp_values(m);
-    std::vector<std::vector<int>> temp_col_indices(m);
-
-    int nnz = 0; // Total number of non-zero elements
-
-    // Generate random sparse matrix
+    std::vector<float> values;
+    std::vector<int> col_indices;
+    
     for (int i = 0; i < m; i++) {
+        mat.row_ptrs[i] = values.size();
         for (int j = 0; j < n; j++) {
-            if (rand() % 100 >= threshold) {  // Non-zero element
-                float val = (float)rand() / (float)RAND_MAX;
-                temp_values[i].push_back(val);
-                temp_col_indices[i].push_back(j);
-                nnz++;
+            if (rand() % 100 >= threshold) {
+                values.push_back((float)rand() / RAND_MAX);
+                col_indices.push_back(j);
             }
         }
     }
-
-    // Allocate storage space
-    mat.values.reserve(nnz);
-    mat.col_indices.reserve(nnz);
-
-    // Build CSR format
-    int current_pos = 0;
-    mat.row_ptrs[0] = 0;
+    mat.row_ptrs[m] = values.size();
     
-    for (int i = 0; i < m; i++) {
-        // Copy current row data
-        mat.values.insert(mat.values.end(), 
-                         temp_values[i].begin(), 
-                         temp_values[i].end());
-        mat.col_indices.insert(mat.col_indices.end(), 
-                             temp_col_indices[i].begin(), 
-                             temp_col_indices[i].end());
-        
-        current_pos += temp_values[i].size();
-        mat.row_ptrs[i + 1] = current_pos;
-    }
+    mat.values = std::move(values);
+    mat.col_indices = std::move(col_indices);
 }
 
+//初始化CSR稀疏矩阵,distance表示字节间隔
+void matrix_init_csr_with_dist(CSRMatrix& mat, int64_t m, int64_t n, unsigned int seed, int distance) {
+    srand(seed);
+    
+    mat.rows = m;
+    mat.cols = n;
+    mat.row_ptrs.resize(m + 1, 0);
+
+    std::vector<float> values;
+    std::vector<int> col_indices;
+    int item_num = distance/4;
+
+    for (int i = 0; i < m; i++) {
+        mat.row_ptrs[i] = values.size();
+        for (int j = 0; j < n; j++) {
+            if (distance == 0 || (i*n+j)%item_num == 0) {
+                values.push_back((float)rand() / RAND_MAX);
+                col_indices.push_back(j);
+            }
+        }
+    }
+    mat.row_ptrs[m] = values.size();
+    
+    mat.values = std::move(values);
+    mat.col_indices = std::move(col_indices);
+}
 
 void  print_vector(svfloat32_t vec){
     int vl = svcntw();

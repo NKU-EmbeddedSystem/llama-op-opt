@@ -1,0 +1,40 @@
+Single-core SpMM took 9.9769 seconds to execute. Sparsity: -1 Distance: 0
+Multi-core SpMM (3 threads) took 17.1828 seconds to execute. Sparsity: -1 Distance: 0
+Result incorrect! Maximum error: 0.00012207
+Result incorrect! Maximum error: 0.00012207
+Single-core SpMM took 0.75432 seconds to execute. Sparsity: -1 Distance: 32
+Multi-core SpMM (3 threads) took 0.828292 seconds to execute. Sparsity: -1 Distance: 32
+Result correct! Maximum error: 3.05176e-05
+Result correct! Maximum error: 3.05176e-05
+Single-core SpMM took 0.299862 seconds to execute. Sparsity: -1 Distance: 64
+Multi-core SpMM (3 threads) took 0.303004 seconds to execute. Sparsity: -1 Distance: 64
+Result correct! Maximum error: 1.14441e-05
+Result correct! Maximum error: 1.14441e-05
+Single-core SpMM took 0.14853 seconds to execute. Sparsity: -1 Distance: 128
+Multi-core SpMM (3 threads) took 0.152141 seconds to execute. Sparsity: -1 Distance: 128
+Result correct! Maximum error: 4.76837e-06
+Result correct! Maximum error: 4.76837e-06
+Single-core SpMM took 0.11114 seconds to execute. Sparsity: -1 Distance: 256
+Multi-core SpMM (3 threads) took 0.0854212 seconds to execute. Sparsity: -1 Distance: 256
+Result correct! Maximum error: 1.90735e-06
+Result correct! Maximum error: 1.90735e-06
+Single-core SpMM took 0.0728408 seconds to execute. Sparsity: -1 Distance: 512
+Multi-core SpMM (3 threads) took 0.0560882 seconds to execute. Sparsity: -1 Distance: 512
+Result correct! Maximum error: 9.53674e-07
+Result correct! Maximum error: 9.53674e-07
+Single-core SpMM took 0.0406882 seconds to execute. Sparsity: -1 Distance: 1024
+Multi-core SpMM (3 threads) took 0.034187 seconds to execute. Sparsity: -1 Distance: 1024
+Result correct! Maximum error: 0
+Result correct! Maximum error: 0
+Single-core SpMM took 0.010725 seconds to execute. Sparsity: -1 Distance: 2048
+Multi-core SpMM (3 threads) took 0.0114554 seconds to execute. Sparsity: -1 Distance: 2048
+Result correct! Maximum error: 0
+Result correct! Maximum error: 0
+Single-core SpMM took 0.0061398 seconds to execute. Sparsity: -1 Distance: 4096
+Multi-core SpMM (3 threads) took 0.0078032 seconds to execute. Sparsity: -1 Distance: 4096
+Result correct! Maximum error: 0
+Result correct! Maximum error: 0
+Single-core SpMM took 0.0051742 seconds to execute. Sparsity: -1 Distance: 5120
+Multi-core SpMM (3 threads) took 0.0060398 seconds to execute. Sparsity: -1 Distance: 5120
+Result correct! Maximum error: 0
+Result correct! Maximum error: 0
