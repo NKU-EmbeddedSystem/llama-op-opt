@@ -10,7 +10,7 @@ float C[M*N];
 
 // Simply mul mat two matrix
 void matrix_mul_mat_SVE(float* matrix_a, float* matrix_b, float* matrix_c,int m, int k, int n,
-    std::map<int,std::vector<int>> index_row,std::map<int,std::vector<int>> index_col){
+    std::vector<std::vector<int>>& index_row, std::vector<std::vector<int>>& index_col){
 
     assert(index_row.size()==index_col.size());
     
@@ -129,7 +129,7 @@ int main(int argc, char* argv[]){
     // int vl = svcntw();
     // std::cout<< "vector register length: "<< vl <<" (x 32) bits"<<std::endl;
 
-    std::map<int,std::vector<int>> index_row,index_col;
+    std::vector<std::vector<int>> index_row, index_col;
     matrix_init(B,K,N,888);
     matrix_init_zero(C,M,N);
     matrix_init_sparse(A,M,K,666,sp,index_row,index_col);
